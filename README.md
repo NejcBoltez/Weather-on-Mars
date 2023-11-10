@@ -7,7 +7,7 @@ First of all, we need to know basic Hadoop Command which are:
 - Command to start node and resource managers: ```start-yarns.sh```
 - Moving all your data from the computer to the Hadoop cluster: ```hadoop fs -copyFromLocal Weather-on-Mars/ .```
 - Removing saved results: ```hadoop fs -rm -r Weather-on-Mars/result/```
-- Executing Hadoop code: ```hadoop jar [path to the jar] [path to the file with data to analyze] [path to the file where we want to store our results]```
+- Executing Hadoop code: ```hadoop jar [path to the jar] ./REMS_Mars_Dataset.csv [path to the file where we want to store our results]```
 - Getting results and saving them to the local machine: ```hadoop fs -copyToLocal [path to the folder which stores our data in Haddop]/part-00000 .```
 
 # How the result looks 
